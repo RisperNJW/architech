@@ -40,9 +40,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
@@ -53,33 +50,47 @@
             </div>
         </div>
     </nav>
-    <section>
+    <section class="harmonious">
         <div class="container">
             <h1 class="heading">Contact Us</h1>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="message" rows="3" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
-    <footer class="footer text-light py-3">
-        <div>
-            <h1>Contact Us</h1>
+    <footer class="footer">
+        <div class="">
+            <h2>Contact Us</h2>
             <p>Address: 123 Main Street, City, Country</p>
             <p>Phone: +1234567890</p>
             <p><a href="mailto:sherryjayanshy@gmail.com"> Email: sherryjayanshy@gmail.com</a></p>
         </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+    
         <div class="social">
             <p>Follow us on social media:</p>
             <a href="#" class="social-link">
@@ -94,5 +105,6 @@
             <p>&copy; 2023 Architecture Firm. All rights reserved.</p>
         </div>
     </footer>
+    
 </body>
 </html>
