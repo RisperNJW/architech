@@ -27,7 +27,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Architechture</a>
+            <label class="navbar-brand d-none d-md-block">Architecture</label>
+            <a href="index.html"><img src="images/arlogo.png" class="logo" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,25 +53,39 @@
     </nav>
     <section class="harmonious">
         <div class="container">
-            <h1 class="heading">Contact Us</h1>
-            <div class="col">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" required>
+            <h1 class="heading">Contact Us taday:</h1>
+            <div class="col-md-10 ">
+                <div class="row mt-5">
+                    <div class="col-md-6">    
+                        <h2>Online inquiry</h2>
+                        <form >
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <input type="text" class="form-control" id="message" rows="3" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                    <div class="col-md-6">
+                        <h2>Visit Us</h2>
+                        <h3>Get in touch</h3>
+                        <p>123 Main Street, City, Country</p>
+                        <p>Phone: +1234567890</p>
+                        <img src="images/arcontact.jpg" alt="">
                     </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <input type="text" class="form-control" id="message" rows="3" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+
+                </div>
             </div>
         </div>
+
     </section>
     <div class="footer">
         <div class="contact-info">
