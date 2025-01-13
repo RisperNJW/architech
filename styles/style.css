@@ -84,6 +84,50 @@ img {
   line-height: 18px;
 }
 
+.flex-container {  
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+  gap: 30px; 
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;   
+}  
+
+.lead
+{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.8;
+  border-left: 5px solid var(--hero-color);
+  background-color: #f9f9f9;
+  padding: 34px;
+  border-radius: 25% 5% 5% 25% / 75% 5% 5% 75%; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.lead em
+{
+  font-style: italic;
+  color: var(--hero-color);
+  font-weight: 600;
+}
+
+.lead-image {
+  width: 100%;
+  max-width: 400px;
+  background: #e0e0e0;
+  border-radius: 15%;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+
+.lead-image:hover {  
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);   
+}
+
 section a {
   color: var(--font-branding-color);
   text-decoration: none;
@@ -103,7 +147,7 @@ section {
   backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.1);
   margin: auto;
-}
+} 
 
 .container h2 {
   text-align: center;
@@ -113,7 +157,7 @@ section {
 /* project info */
 .project-description {  
     margin-top: 15px; 
-    font-size: 14px;  
+    font-size: 20px;  
     line-height: 1.6;  
 }
 
@@ -210,14 +254,26 @@ button:hover {
     font-size: 1.5rem;
   }
   .carousel-caption h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .carousel-caption p {
-    font-size: 18px;
+    font-size: 15px;
   }
   .carousel-item{
     height: 50vh;
   }
+  .flex-container {
+    grid-template-columns: 1fr;
+  }
+
+  .lead {
+    font-size: 16PX;
+  }
+
+  .lead-image {
+    max-width: 300px;
+  }
+
 
   .btn-hero {
     font-size: 16px;
